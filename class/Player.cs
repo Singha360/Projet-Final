@@ -77,7 +77,9 @@ internal class Player : Participant
             {
                 Console.Clear();
                 board.Print();
-                Console.WriteLine("\nThis cell is already occupied");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nThis cell is already occupied. Type another number...");
+                Console.ResetColor();
             }
 
 
