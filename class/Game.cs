@@ -58,10 +58,10 @@ internal class Game
             Console.ResetColor();
             board.Print();
             // Le IF ici est nécessaire dû au fait de comment 
-            // les classes sont ecrient. Quand la denière tours sera
-            // toujours le premier joueur alors on veut s'assurer
+            // les classes sont écrient. La denière tours (9e tour)
+            // sera toujours le premier joueur alors on veut s'assurer
             // que cette boucle termine. Sinon la method "Play"
-            // va continuer a l'infini...
+            // du deuxiéme joueur va causer une boucle infinie...
             if (!board.IsDone(out winner))
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;

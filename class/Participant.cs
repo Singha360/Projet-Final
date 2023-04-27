@@ -1,3 +1,6 @@
+/// <summary>
+/// La classe de base pour Player et Computer
+/// </summary>
 internal abstract class Participant
 {
     internal char symbol;
